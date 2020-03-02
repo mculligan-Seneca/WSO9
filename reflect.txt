@@ -1,0 +1,10 @@
+// Name: Mitchell Culligan
+// Seneca Student ID: 161293170
+// Seneca email: mculligan@myseneca.ca
+// Date of completion: Nov 26th 2019
+//
+// I confirm that the content of this file is created by me,
+//   with the exception of the parts provided to me by my professor.
+
+During this workshop I gained experience on working with threads and concurrent programming. The goal of this program was to read from a file, encrypt the contents of that file and store the encrypted text within a binary file. It was neccessary to store the emcrypted text as a binary file because when the file would be decrypted it would be read exactly as we stored it without the structure of the data being corrupted from the formatting of a text file. 
+Inside the code function where I needed to run the convertor function concurrently I simply used the std::bind function to bind a function to its many arguements. The bind function is important because it allows us to pass a function call with agruements to the thread constructor.Using the std::placeholders namespace I was able to change the position of where the thread would begin to encode the namespace.Multi-threading was advantageous to this project because threads allowed the file to be partitioned into multiple parts and simultaniously encoded.   
